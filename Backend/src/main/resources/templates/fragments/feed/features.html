@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Vinnet</title>
+</head>
+<body>
+	<div class="features" th:fragment="features">
+		<div class="img">
+			<img class="currentUserImage">
+			<p class="currentUserName"></p>
+		</div>
+
+		<div class="img" onclick="window.location.href='/vinnet/friends'">
+			<img src="/assets/images/friend.png">
+			<p>Friends</p>
+		</div>
+
+		<div class="img">
+			<img src="/assets/images/saved.png">
+			<p>Saved</p>
+		</div>
+
+		<div class="img">
+			<img src="/assets/images/group.png">
+			<p>Groups</p>
+		</div>
+
+		<div class="img">
+			<img src="/assets/images/marketplace.png">
+			<p>Marketplace</p>
+		</div>
+
+		<div class="img">
+			<img src="/assets/images/watch.png">
+			<p>Watch</p>
+		</div>
+
+		<div class="img">
+			<img src="/assets/images/down_arrow.png">
+			<p>See more</p>
+		</div>
+	</div>
+</body>
+</html>

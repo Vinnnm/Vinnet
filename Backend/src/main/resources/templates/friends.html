@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinnet</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script type="module" src= "https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/ajax.js"></script>
+	<script src="/assets/js/ajaxUtils.js"></script>
+    <script src="/assets/js/currentUser.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script src="/assets/js/friend.js"></script>
+</head>
+<body>
+
+    <nav>
+
+        <div class="left">
+
+            <div class="logo">
+                <img src="/assets/images/vinnet.png">
+            </div>
+
+            <div class="search_bar">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-box" type="search" placeholder="Search Vinnet">
+
+            </div>
+
+        </div>
+
+        <div class="center">
+
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-users"></i>
+            <button type="button" id="sign-out-btn">Logout</button>
+
+        </div>
+
+        <div class="right">
+
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-moon"></i>
+            <img class="currentUserImage">
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!------------main--------------->
+
+    <div class="main">
+
+        <!------------------left------------------->
+
+        <div class="left" style="background: #fff; box-shadow: 0 1px 8px rgba(0,0,0,0.2);">
+			<h2>Friends</h2>   
+
+            <div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; margin-top: 20px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="fa-solid fa-user-group" style="font-size: 18px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>Home</p>
+            </div>
+            
+            <div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="fa-solid fa-user-minus" style="font-size: 18px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>Friend Requests</p>
+            </div>
+            
+            <div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="fa-solid fa-user-plus" style="font-size: 18px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>Suggestions</p>
+            </div>
+            
+            <div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="fa-solid fa-users" style="font-size: 18px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>All Friends</p>
+            </div>
+            
+            <div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="fa-solid fa-gift" style="font-size: 18px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>Birthdays</p>
+            </div>        
+			
+			<div class="img" style="display: flex; align-items: center; justify-content: left; flex-direction: row; margin-left: 3px; column-gap: 12px;">
+            	<div style="height: 51px; display: flex; align-items: center; justify-content: center;">
+	            	<div style="width: 40px; height: 40px; border-radius: 50%; background: #e4e6eb; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+	            		<i class="bx bxs-user-detail" style="font-size: 24px;"></i>
+	            	</div>            		
+            	</div>
+                
+                <p>Custom Lists</p>
+            </div>
+            
+
+        </div>
+
+        <!------------center---------------------->
+
+        <div class="center" style="width: 100%;">
+        	<h2>Friend Requests</h2>
+        	<div id="pending-friends" style="margin-top: 20px;">
+        		<div class="pending-friends-container">				
+			</div>
+        	</div>
+			
+                 
+			
+            <p class="end">Design By<span><i class="fa-regular fa-face-grin"></i>Vinn</span></p>
+
+
+        </div>                
+
+    </div>
+    
+    <script src="/assets/js/script.js"></script>       
+</body>
+</html>
