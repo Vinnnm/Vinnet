@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinnet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/assets/chatCSS/index.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="left-sidebar">
+            <div class="chat-tollbar">
+                <div class="left-chat-tollbar">
+                    <img src="/assets/images/profile.jpg">
+                    <h1>Chats</h1>
+                </div>
+                <div class="right-chat-tollbar">
+                    <a> <i class="fas fa-plus"></i></a>
+                </div>
+
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search Messenger">
+            </div>
+            <div class="recent-list">
+                <ul class="recent_list">
+                    <!-- <li>
+                        <img src="/assets/images/profile.jpg">
+                        <div class="message-info">
+                            <div class="user-name">Kyaw Thi Ha</div>
+                            <div class="user-info">
+                                <span class="message">You : Hi</span>
+                                <span class="time">2d</span>
+                            </div>
+                        </div>
+                    </li> -->                
+                </ul>
+            </div>
+        </div>
+        <div class="message-body">
+            <div class="message-container">
+                <div class="message-header">
+                    <div class="user">
+                        <img src="/assets/images/profile.jpg"></li>
+                        <div class="user-info">
+                            <div class="name">Vinn</div>
+                            <div class="status">Active 21m ago</div>
+                        </div>
+                    </div>
+                    <div class="message-action-menu">
+                        <div><i class="fas fa-phone-alt"></i></div>
+                        <div><i class="fas fa-video"></i></div>
+                        <div><i class="fas fa-info"></i></div>
+                    </div>
+                </div>
+                <div class="message-conversation-body">
+                    <div class="other-message">
+                        <div class="other-message-user-profile">
+                            <img src="/assets/images/profile.jpg">
+                        </div>
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hi</p>
+                            </div>
+                            <div class="image-message">
+                                <img src="/assets/images/profile.jpg">
+                            </div>
+                            <div class="message">
+                               <p> What Doing</p>
+                            </div>
+                            <div class="message">
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet consequuntur id, saepe officiis, quia optio, distinctio mollitia a quasi neque eveniet iste tempora nobis incidunt quisquam minus veniam iusto vitae?</p>
+                             </div>
+                             <div class="message">
+                                <p> What Doing</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="me-message">
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hello </p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                            <div class="message">
+                                <p>How are you?</p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-date">
+                        <span>1/28/20, 9:11 PM</span>
+                    </div>
+                    <div class="other-message">
+                        <div class="other-message-user-profile">
+                            <img src="/assets/images/profile.jpg">
+                        </div>
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hi</p>
+                            </div>
+                            <div class="message">
+                               <p> What Doing</p>
+                            </div>
+                            <div class="message">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda iste architecto doloremque repellat non dolorem? Eius impedit, doloribus quis voluptatum quod illo veritatis quisquam velit, aliquid facere repellendus magni nostrum.</p>
+                             </div>
+                             <div class="message">
+                                <p> What Doing</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="me-message">
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hello </p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                            <div class="message">
+                                <p>How are you?</p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-date">
+                        <span>1/28/20, 9:11 PM</span>
+                    </div>
+                    <div class="other-message">
+                        <div class="other-message-user-profile">
+                            <img src="/assets/images/profile.jpg">
+                        </div>
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hi</p>
+                            </div>
+                            <div class="message">
+                               <p> What Doing</p>
+                            </div>
+                            <div class="message">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, repellendus officiis velit itaque corrupti molestias enim veritatis ea optio, quod facilis sit tempore eveniet asperiores voluptate id inventore nam ex?</p>
+                             </div>
+                             <div class="message">
+                                <p> What Doing</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="me-message">
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hello </p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                            <div class="message">
+                                <p>How are you?</p>
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-date">
+                        <span>1/28/20, 9:11 PM</span>
+                    </div>
+                    <div class="other-message">
+                        <div class="other-message-user-profile">
+                            <img src="/assets/images/profile.jpg">
+                        </div>
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hi</p>
+                            </div>
+                            <div class="message">
+                               <p> What Doing</p>
+                            </div>
+                            <div class="message">
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia repellendus aliquam, beatae quod nihil voluptates quidem laudantium, facilis dignissimos deleniti, ullam quo magni fugiat ea velit similique minima animi delectus.</p>
+                             </div>
+                             <div class="message">
+                                <p> What Doing</p>
+                             </div>
+                             <div class="image-message-list">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-message">
+                        <div class="message-inbox">
+                            <div class="message">
+                                <p>Hello </p>
+                            </div>
+                            <div class="image-message">
+                                <img src="/assets/images/profile.jpg">
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                            <div class="message">
+                                <p>How are you?</p>
+                            </div>
+                            <div class="image-message-list">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                                <img src="/assets/images/profile.jpg">
+                            </div>
+                            <div class="message">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur gravida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-date">
+                        <span>1/28/20, 9:11 PM</span>
+                    </div>
+                </div>
+                <div class="message-toolbar">
+                    <div>
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <textarea rows="1" class="message-input"></textarea>
+                    <div>
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="message-user-profile"></div>
+        </div>
+    </div>
+    <script src="/assets/js/chatScript.js"></script>
+</body>
+</html>

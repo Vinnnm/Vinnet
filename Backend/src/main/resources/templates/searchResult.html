@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinnet</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src= "https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/ajax.js"></script>
+	<script src="/assets/js/ajaxUtils.js"></script>
+    <script src="/assets/js/currentUser.js"></script>
+    <script src="/assets/js/search.js"></script>
+</head>
+<body>
+
+    <nav>
+
+        <div class="left">
+
+            <div class="logo">
+                <img src="/assets/images/vinnet.png">
+            </div>
+
+            <div class="search_bar">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-box" type="search" placeholder="Search Vinnet">
+
+            </div>
+
+        </div>
+
+        <div class="center">
+
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-users"></i>
+            <button type="button" id="sign-out-btn">Logout</button>
+
+        </div>
+
+        <div class="right">
+
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-moon"></i>
+            <img class="currentUserImage">
+
+        </div>
+
+    </nav>
+    <div class="search-container">   
+        <div class="search-left-container">
+        	<h2>Search results</h2>
+        	<hr>
+        	<p>Filters</p>
+        	<p><i class="fa-solid fa-envelopes-bulk" style="font-size: 18px;"></i>All</p>
+        	<p><i class='bx bx-book-content' style="font-size: 24px;"></i>Post</p>
+        	
+        	<p><i class="fa-solid fa-user-group"></i>People</p>
+        	
+        </div>
+        <div class="search-right-container">
+        	
+        	
+        </div>
+    </div>
+    
+</body>
