@@ -1,2 +1,2 @@
 # Vinnet
-Social Networking System - Angular, Spring Boot
+Social Networking System - Spring Boot, Thymeleaf
